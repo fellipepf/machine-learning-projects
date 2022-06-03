@@ -1,6 +1,5 @@
 
 # Fellipe Paes Ferreira
-# ID R00206917
 
 #windows
 setwd("C:/Users/felli/OneDrive/CIT - Master Data Science/Semester 2/Data Analytics & Visualisation/assesment 1/repository")
@@ -9,6 +8,10 @@ setwd("C:/Users/felli/OneDrive/CIT - Master Data Science/Semester 2/Data Analyti
 
 setwd("~/OneDrive/CIT - Master Data Science/Semester 2/Data Analytics & Visualisation/assesment 1/repository")
 
+library(rstudioapi)
+
+
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 #install packages
 install.packages("shinyjs")
