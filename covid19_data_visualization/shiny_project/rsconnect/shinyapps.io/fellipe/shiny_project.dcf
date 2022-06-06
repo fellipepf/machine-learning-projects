@@ -1,0 +1,13 @@
+name: shiny_project
+title: shiny_project
+username:
+account: fellipe
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6431917
+bundleId: 5978036
+url: https://fellipe.shinyapps.io/shiny_project/
+when: 1654376976.91633
+lastSyncTime: 1654376976.91634
+asMultiple: FALSE
+asStatic: FALSE
