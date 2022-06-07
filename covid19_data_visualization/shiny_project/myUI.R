@@ -29,7 +29,7 @@ library(grid)
 library(devtools)
 
 
-
+library(shinydashboard)
 
 source("load_data.R")
 
@@ -118,8 +118,13 @@ myUI <- fluidPage(
                   ),
                   
                   tabPanel("World", 
+                           #map1
                            plotOutput("world_covid"),
+                           
+                           #map2
                            plotOutput("world_covid_spread"),
+                           
+                           #gauges
                            dashboardBody(
                              column(6,box(flexdashboard::gaugeOutput("gauge1"),width=12,title="Vaccine Gauge")),
                              column(6,box(flexdashboard::gaugeOutput("gauge2"),width=12,title="Vaccine Gauge")),
@@ -127,6 +132,8 @@ myUI <- fluidPage(
                              column(6,box(flexdashboard::gaugeOutput("gauge4"),width=12,title="Vaccine Gauge")),
                              
                            ),
+                           
+                           #line charts
                            plotOutput("world_lineChart")
                   ),                
                   

@@ -5,9 +5,10 @@ account: fellipe
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 6431917
-bundleId: 5978036
+bundleId: 5982655
 url: https://fellipe.shinyapps.io/shiny_project/
-when: 1654376976.91633
-lastSyncTime: 1654376976.91634
+when: 1654537326.9174
+lastSyncTime: 1654537326.91741
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: app_2.R|datasets/sources.txt|example1.R|example2.R|example3.R|install_libraries.R|shiny_project_fellipe.R

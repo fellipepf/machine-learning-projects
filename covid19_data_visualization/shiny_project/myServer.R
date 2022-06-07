@@ -1,6 +1,6 @@
 
 #----------------------------------------------- SERVER CODE ----------------------------------------
-myServer <- function(input, output) {
+myServer <- function(input, output, session) {
   
   
   
@@ -261,6 +261,9 @@ myServer <- function(input, output) {
            x ="Date", y = "Deaths")
     
   })
+  
+  
+  
   #------------------------------------------ World ------------------------------------------
   output$world_covid <- renderPlot({
     world_values_last_day = world_covid %>% filter(date == "2021-01-27" )
@@ -376,6 +379,20 @@ myServer <- function(input, output) {
          
     )
   }, deleteFile = TRUE)
+  
+  ######### Gauges ########
+
+  
+  gauge_op <- reactive({
+    print(input$gauge1_opt)
+  })
+
+  print(gauge_op)
+  
+  observe({
+      selected_country <- isolate(input$gauge1_opt)
+      print(selected_country)
+  })
   
   
   countries = c("Brazil", "Israel", "Italy","Ireland")
